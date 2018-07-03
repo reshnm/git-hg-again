@@ -23,7 +23,7 @@ import sys
 
 def clone(url, target_dir=None):
     """This makes an hg clone and makes that appear as a Git repository."""
-    if target is not None:
+    if target_dir is not None:
         subdir = target_dir
     else:
         subdir = os.path.basename(url)
