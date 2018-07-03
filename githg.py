@@ -21,9 +21,12 @@ import sys
 # TODO: when running a command, ensure the Hg bookmark plugin is active and
 #       installed
 
-def clone(url):
+def clone(url, target_dir=None):
     """This makes an hg clone and makes that appear as a Git repository."""
-    subdir = os.path.basename(url)
+    if target is not None:
+        subdir = target_dir
+    else
+        subdir = os.path.basename(url)
     os.system("hg clone -U %s" % (url,))
     os.system("""
 cd %s
