@@ -25,7 +25,7 @@ def clone(url, target_dir=None):
     """This makes an hg clone and makes that appear as a Git repository."""
     if target is not None:
         subdir = target_dir
-    else
+    else:
         subdir = os.path.basename(url)
     os.system("hg clone -U %s" % (url,))
     os.system("""
