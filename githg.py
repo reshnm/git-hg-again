@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 # -=- encoding: utf-8 -=-
 
 """Git-hg is a bi-directional interface to Mercurial, like git-svn, but for Hg.
